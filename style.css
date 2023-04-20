@@ -1,0 +1,68 @@
+text{
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:11px;
+        pointer-events:none;
+    }
+    #chart{
+        position:absolute;
+        width:500px;
+        height:500px;
+        top:0;
+        left:0;
+    }
+    #question{
+        position: absolute;
+        width:400px;
+        height:500px;
+        top:60;
+        left:520px;
+    }
+    #question h1{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top:50%;
+        -webkit-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+    }
+
+    #answer{
+        position: absolute;
+        width:400px;
+        height:500px;
+        top:200px;
+        left:520px;
+    }
+
+.show-answer-button {
+  position: absolute;
+  right: 0;
+  top:0;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.answer {
+  display: none;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.show-answer-button:focus + .answer,
+.show-answer-button:active + .answer,
+.show-answer-button:hover + .answer {
+  display: block;
+}
